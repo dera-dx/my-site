@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #f4f4f9, #c6c6f8);
+  animation: backgroundAnimation 5s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+  from {
+    background: linear-gradient(135deg, #f4f4f9, #c6c6f8);
+  }
+  to {
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  }
+}
+
+.container {
+  text-align: center;
+  transform: rotate(2deg);
+  animation: funnyAnimation 3s infinite alternate;
+}
+
+@keyframes funnyAnimation {
+  from {
+    transform: rotate(-2deg);
+  }
+  to {
+    transform: rotate(2deg);
+  }
+}
+
+#calculator {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  width: 320px;
+}
+
+#display {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #007bff;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Keep the previous styles */
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* More columns for added buttons */
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 14px; /* Reduced font size to fit more keys */
+}
+
+/* Add CSS classes for different background colors */
+
+.blue-background {
+  background-color: #007bff;
+}
+
+.yellow-background {
+  background-color: #ffff00;
+}
+
+.orange-background {
+  background-color: #ffa07a;
+}
+
+.black-background {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Update the button styles to match the new background colors */
+
+button {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.blue-background button {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.yellow-background button {
+  background-color: #ffff00;
+  color: #000000;
+}
+
+.orange-background button {
+  background-color: #ffa07a;
+  color: #000000;
+}
+
+.black-background button {
+  background-color: #000000;
+  color: #ffffff;
+}
